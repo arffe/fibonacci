@@ -8,8 +8,8 @@ until [ $COUNTER -gt $1 ]; do
 	else
 		let fib=num1+num2
 	fi
-		let num1=num2
-		let num2=fib
-		let COUNTER=COUNTER+1
+	let num1=num2
+	let num2=fib
+	let COUNTER=COUNTER+1
 done
 echo "fib("$1")" = $fib
